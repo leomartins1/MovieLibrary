@@ -28,7 +28,7 @@ class MovieList extends Component {
   render() {
     const { movies, isLoading } = this.state;
     return (
-      <div data-testid="movie-list">
+      <div className="movieList">
         {isLoading && <Loading />}
         {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
