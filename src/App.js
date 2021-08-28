@@ -10,7 +10,8 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <div>
-      Movie Card Library CRUD
+      <header className="header">Minha Biblioteca de filmes</header>
+      
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={ MovieList } />

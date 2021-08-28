@@ -50,7 +50,7 @@ class MovieForm extends React.Component {
             value={ subtitle }
             onChange={ (event) => this.updateMovie('subtitle', event.target.value) }
           />
-          Subtítulo
+          Título em Português
         </label>
       </div>
     );
@@ -118,6 +118,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_rating">
+        Avaliação
           <input
             placeholder="Dê a avaliação do filme"
             id="movie_rating"
@@ -128,7 +129,6 @@ class MovieForm extends React.Component {
             value={ rating }
             onChange={ (event) => this.updateMovie('rating', event.target.value) }
           />
-          Avaliação
         </label>
       </div>
     );
@@ -141,7 +141,7 @@ class MovieForm extends React.Component {
           type="button"
           onClick={ this.handleSubmit }
         >
-          Submit
+          Atualizar
         </button>
       </div>
     );

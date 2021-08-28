@@ -89,7 +89,7 @@ const movies = [
   },
   {
     id: 9,
-    title: 'Original title: Spider-Man: Homecoming',
+    title: 'Spider-Man: Homecoming',
     ptTitle: 'Homem-Aranha: De Volta ao Lar',
     storyline: "Peter Parker equilibra a sua vida como um estudante normal com o seu super herói, o Homem Aranha, mas encontrará um rastro de uma nova ameaça que ronda os céus da cidade de Nova York.",
     rating: 3.7,
