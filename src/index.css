@@ -102,3 +102,12 @@ a {
 .editStoryline {
   display: flex;
 }
+
+.header {
+  padding: 5px;
+  position: fixed;
+  background-color: #101010;
+  opacity: 0.8;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
