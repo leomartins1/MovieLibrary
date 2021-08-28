@@ -76,3 +76,29 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.editPage {
+  background-color: #101010;
+  display: flex;
+  width: 60vw;
+  justify-content: center;
+  text-align: justify;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.editForm input {
+  margin: 5px;
+}
+
+.editTextArea {
+  resize: none;
+  overflow:auto;
+  width: 25rem;
+  min-height: 5rem;
+  max-height: 20rem;
+}
+
+.editStoryline {
+  display: flex;
+}

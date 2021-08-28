@@ -23,6 +23,7 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_title">
+          Título:
           <input
             placeholder="Insira o título"
             id="movie_title"
@@ -31,26 +32,25 @@ class MovieForm extends React.Component {
             value={ title }
             onChange={ (event) => this.updateMovie('title', event.target.value) }
           />
-          Título
         </label>
       </div>
     );
   }
 
   renderSubtitleInput() {
-    const { subtitle } = this.state;
+    const { ptTitle } = this.state;
 
     return (
       <div>
-        <label htmlFor="movie_subtitle">
+        <label htmlFor="movie_ptTitle">
+          Título em Português:
           <input
-            placeholder="Insira o subtítulo"
+            placeholder="Insira o título em português"
             id="movie_subtitle"
             type="text"
-            value={ subtitle }
+            value={ ptTitle }
             onChange={ (event) => this.updateMovie('subtitle', event.target.value) }
           />
-          Título em Português
         </label>
       </div>
     );
@@ -62,6 +62,7 @@ class MovieForm extends React.Component {
     return (
       <div className="row">
         <label htmlFor="movie_image">
+          Imagem:
           <input
             placeholder="Insira o caminho da imagem"
             id="movie_image"
@@ -69,7 +70,6 @@ class MovieForm extends React.Component {
             value={ imagePath }
             onChange={ (event) => this.updateMovie('imagePath', event.target.value) }
           />
-          Imagem
         </label>
       </div>
     );
@@ -80,13 +80,14 @@ class MovieForm extends React.Component {
 
     return (
       <div>
-        <label htmlFor="movie_storyline">
+        <label htmlFor="movie_storyline" className="editStoryline">
+          Sinopse:
           <textarea
+            className="editTextArea"
             id="movie_storyline"
             value={ storyline }
             onChange={ (event) => this.updateMovie('storyline', event.target.value) }
           />
-          Sinopse
         </label>
       </div>
     );
@@ -149,8 +150,8 @@ class MovieForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <form>
+      <div className="editPage">
+        <form className="editForm">
           {this.renderTitleInput()}
           {this.renderSubtitleInput()}
           {this.renderImagePathInput()}
