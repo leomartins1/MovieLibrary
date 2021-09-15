@@ -1,4 +1,4 @@
-# My Awesome Project
+# My Movie Library
 
 # Contexto
 Este projeto trata-se de uma biblioteca de filmes que permite adicionar novos títulos, modificar os existentes e possui informações sobre os mesmos.
